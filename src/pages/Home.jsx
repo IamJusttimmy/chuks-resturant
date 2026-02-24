@@ -6,7 +6,7 @@ import WhatsNew from '../components/WhatsNew';
 
 const Home = () => {
   return (
-    <main className="pb-20">
+    <main>
       <Hero />
       <SearchBar />
       <Categories />

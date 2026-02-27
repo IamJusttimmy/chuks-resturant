@@ -31,13 +31,15 @@ const Navbar = () => {
           <Link to="/account" className={linkClass("/account")} style={{ fontSize: '16px', fontFamily: 'Inter' }}>Account</Link>
         </div>
 
-        {/* Desktop Login Button */}
-        <button
-          style={{ backgroundColor: '#FF7A18', fontFamily: 'Inter', fontWeight: '600', fontSize: '16px' }}
-          className="hidden md:block text-white px-8 py-2 rounded-lg transition-transform hover:scale-105"
-        >
-          Login
-        </button>
+        {/* Desktop Login Button - WRAPPED IN LINK */}
+        <Link to="/login" className="hidden md:block">
+          <button
+            style={{ backgroundColor: '#FF7A18', fontFamily: 'Inter', fontWeight: '600', fontSize: '16px' }}
+            className="text-white px-8 py-2 rounded-lg transition-transform hover:scale-105"
+          >
+            Login
+          </button>
+        </Link>
 
         {/* Mobile Hamburger */}
         <button
@@ -57,12 +59,16 @@ const Navbar = () => {
           <Link to="/explore" className={linkClass("/explore")} style={{ fontFamily: 'Inter' }} onClick={() => setMenuOpen(false)}>Explore</Link>
           <Link to="/orders" className={linkClass("/orders")} style={{ fontFamily: 'Inter' }} onClick={() => setMenuOpen(false)}>My Orders</Link>
           <Link to="/account" className={linkClass("/account")} style={{ fontFamily: 'Inter' }} onClick={() => setMenuOpen(false)}>Account</Link>
-          <button
-            style={{ backgroundColor: '#FF7A18', fontFamily: 'Inter', fontWeight: '600' }}
-            className="text-white px-6 py-2 rounded-lg w-full"
-          >
-            Login
-          </button>
+          
+          {/* Mobile Login Button - WRAPPED IN LINK */}
+          <Link to="/login" onClick={() => setMenuOpen(false)}>
+            <button
+              style={{ backgroundColor: '#FF7A18', fontFamily: 'Inter', fontWeight: '600' }}
+              className="text-white px-6 py-2 rounded-lg w-full"
+            >
+              Login
+            </button>
+          </Link>
         </div>
       )}
     </>

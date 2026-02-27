@@ -11,21 +11,29 @@ const Signup = () => {
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
           <div className="relative">
-            <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">✉</span>
+            <span className="absolute inset-y-0 left-3 flex items-center text-gray-400"><img src="mail.png" alt="mail" /></span>
             <input type="email" className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg outline-none" placeholder="name@gmail.com" />
           </div>
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Phone number</label>
           <div className="relative">
-            <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">📞</span>
+            <span className="absolute inset-y-0 left-3 flex items-center text-gray-400"><img src="call.png" alt="phone" /></span>
             <input type="text" className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg outline-none" placeholder="8123340690" />
           </div>
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
           <div className="relative">
-            <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">🔒</span>
+            <span className="absolute inset-y-0 left-3 flex items-center text-gray-400"><img src="lock.png" alt="lock" /></span>
+            <input type="password" className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg outline-none" placeholder="QWE123#" />
+            <span className="absolute inset-y-0 right-3 flex items-center text-gray-400">👁</span>
+          </div>
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+          <div className="relative">
+            <span className="absolute inset-y-0 left-3 flex items-center text-gray-400"><img src="lock.png" alt="lock" /></span>
             <input type="password" className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg outline-none" placeholder="QWE123#" />
             <span className="absolute inset-y-0 right-3 flex items-center text-gray-400">👁</span>
           </div>
